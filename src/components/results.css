@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+.container {
+    width: 720px;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: #6e6c6c;
+
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.left__card {
+    height: 550px;
+    width: 380px;
+
+    background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%);
+    border-radius: 24px;
+    text-align: center;
+}
+
+.card__title {
+    margin-top: 24px;
+    color: hsl(241, 100%, 89%);
+}
+
+.card__results {
+
+}
+
+.right__card {
+    height: 550px;
+    width: 380px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media (max-width:540px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container, .left__card, .right__card {
+        width: 100%;
+    }
+
+    .left__card {
+        border-radius:0 0  24px 24px ;
+    }
+}
