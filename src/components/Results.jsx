@@ -18,23 +18,37 @@ export const Results = () => {
             </div>
             <div className='right__card'>
                 <h2>Summary</h2>
-                <div className="card__topic">
-                    <p>Reaction</p>
-                    <p> 80 / 100</p>
+                <div className='topics__container'>
+                    <div className="card__topic reaction__container">
+                        <div className='summary__title-icon'>
+                            <span className='reaction icon'></span>
+                            <p>Reaction</p>
+                        </div> 
+                        <p> <b>80</b> / 100</p>
+                    </div>
+                    <div className="card__topic memory__container">
+                        <div className='summary__title-icon'>
+                            <span className='memory icon'></span>
+                            <p>Memory</p>
+                        </div> 
+                        <p><b>92</b> / 100</p>
+                    </div>
+                    <div className="card__topic verbal__container">
+                        <div className='summary__title-icon'>
+                            <span className='verbal icon'></span>
+                            <p>Verbal</p>
+                        </div> 
+                        <p><b>61</b> / 100</p>
+                    </div>
+                    <div className="card__topic visual__container">
+                        <div className='summary__title-icon'>
+                            <span className='visual icon'></span>
+                            <p>Visual</p>
+                        </div> 
+                        <p><b>72</b> / 100</p>
+                    </div>
+                    <button className='next__button'>Continue</button>
                 </div>
-                <div className="card__topic">
-                    <p>Memory</p>
-                    <p>92 / 100</p>
-                </div>
-                <div className="card__topic">
-                    <p>Verbal</p>
-                    <p>61 / 100</p>
-                </div>
-                <div className="card__topic">
-                    <p>Visual</p>
-                    <p>72 / 100</p>
-                </div>
-                <button>Continue</button>
             </div>
         </section>
     )
