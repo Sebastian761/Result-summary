@@ -142,6 +142,7 @@
     width: 90%;
     background-color: rebeccapurple;
     display: flex;
+    border-radius: 8px;
     justify-content: space-between;
 }
 
